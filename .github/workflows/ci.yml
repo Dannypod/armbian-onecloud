@@ -16,7 +16,7 @@ env:
   UBOOT_BURNIMG: eMMC.burn.img
   ARMBIAN_REPO: armbian/build
   ARMBIAN_REF: main
-  PATCHES: 4077,5076,5082
+  #PATCHES: 4077,5076,5082
 
 jobs:
   prepare:
@@ -94,7 +94,7 @@ jobs:
       fail-fast: false
       matrix:
         BRANCH:
-          - edge
+          #- edge
           - current
 
     steps:
@@ -143,7 +143,7 @@ jobs:
       fail-fast: false
       matrix:
         BRANCH:
-          - edge
+          #- edge
           - current
         RELEASE:
           # - focal # Ubuntu 20.04 LTS
